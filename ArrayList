@@ -1,0 +1,40 @@
+
+<---- ArrayList program ----->
+import java.util.*;
+public class Main {
+	public static void main(String[] args) {
+		
+		ArrayList<Integer> array = new ArrayList<Integer>();
+		
+		//add the element
+		array.add(20);
+		array.add(30);
+		array.add(23);
+		array.add(8);	
+		System.out.println("ArrayList is:"+array); 
+		
+		//find size of the ArrayList 
+		int size = array.size();
+		System.out.println("ArrayList size is:"+size);  
+		
+		//Access specific index element 
+		System.out.println("Get element of 2 index "+array.get(2)); 
+		
+		//replace the specific index element 
+		System.out.println("ArrayList is:"+array); 
+		array.set(1,40);
+		System.out.println("After replace ArrayList is:"+array); 
+		
+		//add element at the end
+		boolean b = array.add(12);
+		System.out.println("After append element in ArrayList is:"+array);  
+		
+		//remove the specific indexed element 
+		array.remove(2);
+		System.out.println("After Remove element ArrayList is:"+array); 
+		
+		//sort the Array list
+		Collections.sort(array);
+		System.out.println("sorted ArrayList is:"+array); 
+	}
+}
