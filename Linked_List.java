@@ -45,6 +45,8 @@ public class Main {
 				 li.removeLast();
 			System.out.println("Remove the Last  element then"+li);
 			
-	
+		for(int i : li){
+		System.out.println(i);
+		}
 	}
 } 
