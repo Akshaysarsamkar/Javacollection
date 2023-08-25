@@ -1,0 +1,60 @@
+import java.util.*;
+public class Main {
+	public static void main(String[] args) {
+		
+		Vector<Integer> v = new Vector<Integer>(); 
+		
+		//check the capacity
+		System.out.println("Capacity of Vector is:"+v.capacity());
+		
+		//add element
+		v.addElement(40);
+		v.addElement(23);
+		v.addElement(43);
+		v.addElement(92);
+		v.addElement(42);
+		v.addElement(56);
+		v.addElement(87);
+		v.addElement(342);
+		v.addElement(12);
+		v.addElement(35);
+		v.add(220);
+		System.out.println(v);
+		
+	System.out.println("Capacity of Vector is:"+v.capacity());
+		
+		
+		//get specific index element
+		System.out.println("2 indexed element is:"+v.elementAt(2));
+		
+		//check element is contain vector or not 
+		
+		if(v.contains(32)){
+			System.out.println("32 number  Contain vector");
+		} 
+		
+		//first element in the vector
+		System.out.println("First element in vector:"+v.firstElement()); 
+		
+		//remove all element 
+		System.out.println(v);
+	//	v.removeAllElements();
+	
+	//isEmpty method 
+	
+	if(v.isEmpty()){
+		System.out.println("Vector is Empty");
+	}
+	else{
+			System.out.println("Vector is not Empty");
+	}
+	
+	//last index of vector
+	System.out.println("Last Index of Vector is:"+v.lastIndexOf(43));
+	
+		
+			//setElementAtethod 
+			v.setElementAt(34,3);
+			System.out.println(v);	
+	}
+}
