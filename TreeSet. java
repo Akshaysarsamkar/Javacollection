@@ -1,0 +1,30 @@
+import java.util.*;
+public class Main {
+	public static void main(String[] args) {
+		
+		TreeSet<String> Ts = new TreeSet<String>();
+		System.out.println("Size of the Tree set is:"+Ts.size());
+		
+		Ts.add("Akahay");
+		Ts.add("Aaksha");
+		Ts.add("Vaibhav");
+		Ts.add("Gavrav");
+		Ts.add("akahay");
+		Ts.add("Karan");
+		Ts.add("Karan");//not contain dublicate
+		System.out.println("Size of the Tree set is:"+Ts.size());
+		System.out.println("Tree set is:"+Ts);
+		
+	//remove item
+	Ts.remove("akshay");
+	System.out.println("Tree set is:"+Ts);
+	
+	//first element in the sorted Treeset
+	System.out.println("First element is:"+Ts.first());
+	
+	//last element in sorted Treeset
+		System.out.println("First element is:"+Ts.last());
+		
+	
+	}
+}
