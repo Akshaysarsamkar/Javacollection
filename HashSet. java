@@ -1,0 +1,30 @@
+import java.util.*;
+public class Main {
+	public static void main(String[] args) {
+			
+			HashSet<Integer> s = new HashSet<Integer>(); 
+			
+			//add element in the  hashset
+			s.add(23);
+			s.add(21);
+			s.add(25);
+			s.add(78);
+			s.add(23); //duplicate not catain again
+			s.add(21);
+			
+			System.out.println(s);
+			
+			//size of the hashset
+			System.out.println("size of the HashSet is:"+s.size()); 
+      //size is not 6 because 2 element are duplicate 
+			
+			//remove specific element
+	  	s.remove(23);
+			System.out.println(s);
+
+      //not allow because order is not maintain int the Set or HashSet
+			//System.out.println(s.set());
+			
+
+	}
+}
