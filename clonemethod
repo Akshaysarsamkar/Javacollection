@@ -1,0 +1,17 @@
+import java.util.*;
+final class clonemethoduse{
+	public static void main(String[] args) {
+	
+		ArrayList<String> li = new ArrayList<String>();	
+		li.add("Akahay");
+		li.add("Sumit");
+		li.add("Karan");
+		li.add("Vaibhav");
+		li.add("Pradip");
+		System.out.println("Original ArrayList:"+li);
+		
+		ArrayList<String> li1 = (ArrayList<String>)li.clone() ;
+		
+		System.out.println("Copied ArrayList:"+li1);
+	}
+}
