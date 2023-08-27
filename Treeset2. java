@@ -47,4 +47,15 @@ public class Main {
 	//remove all element
     ts.clear();
 	System.out.println(ts);
+	
+		ts.add(30.4f);
+		ts.add(3.2f);
+		ts.add(13.4f);
+		ts.add(3.2f);//duplicate element
+		ts.add(39.12f);
+		
+		for (Float f : ts)
+		{
+			System.out.println(f);
+		}
 }	
