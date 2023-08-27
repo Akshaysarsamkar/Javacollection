@@ -1,0 +1,50 @@
+import java.util.*;
+public class Main {
+	public static void main(String[] args) {
+		
+		TreeSet<Float> ts = new TreeSet<Float>();
+		
+		//add element in Tree set
+		ts.add(30.4f);
+		ts.add(3.2f);
+		ts.add(13.4f);
+		ts.add(3.2f);//duplicate element
+		ts.add(39.12f);
+		System.out.println(ts);
+		
+		//size of Tree set
+		System.out.println("Size of the Tree set is:"+ts.size());
+		
+		//we can not get or set method in the set 
+		//ts.get(3);
+		
+		//isEmpty 
+		if(ts.isEmpty()){
+			System.out.println("Tree set is empty");
+		}
+		else{
+			System.out.println("tree is not empty");
+		}
+		
+		//element contain or not 
+			if(ts.contains(3.2f)){
+			System.out.println("Element is present");
+		}
+		else{
+			System.out.println("not Present");
+		}
+		
+		//get first item in sorted TreeSet 
+		System.out.println("First element is:"+ts.first()); 
+		
+		//last item in sorted Tree set
+		System.out.println("Last item is:"+ts.last());
+	//remove element
+	System.out.println("Before remove:"+ts);
+	ts.remove(3.2f);
+	System.out.println("After remove:"+ts);
+	
+	//remove all element
+    ts.clear();
+	System.out.println(ts);
+}	
