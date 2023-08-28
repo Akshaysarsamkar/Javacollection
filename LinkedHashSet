@@ -1,4 +1,4 @@
-import java.util.*;
+mport java.util.*;
 public class Hashsetexample {
 	public static void main(String[] args) {
 		
@@ -31,7 +31,11 @@ public class Hashsetexample {
 	   System.out.println("Size is:"+a.size());
 	   
 	   //remove all element 
-	  a.clear();
+  	 a.clear();
 	  System.out.println(a);
+	  
+	  for(int i : a){
+	     System.out.println(i);
+	  }
 	}
 }
