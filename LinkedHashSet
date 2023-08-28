@@ -1,0 +1,37 @@
+import java.util.*;
+public class Hashsetexample {
+	public static void main(String[] args) {
+		
+		LinkedHashSet<Integer> a = new LinkedHashSet<Integer>(); 
+		//add elwment
+		a.add(12);
+		a.add(13);
+		a.add(1);
+		a.add(2);
+		System.out.println(a);//maintain insertion order 
+		
+		//create clone copy 
+		LinkedHashSet<Integer> c = (LinkedHashSet<Integer>)a.clone();
+		System.out.println(c);
+		
+		
+		//check empty or not 1
+	   boolean empty = a.isEmpty();
+	   System.out.println(empty);
+	   
+	   //specific element is contain or not 
+	   boolean con = a.contains(1);
+	   System.out.println(con);
+	   
+	   //remove 1 element
+	    boolean re = a.remove(1);
+	   System.out.println("Element is remove: "+re + " "+a);
+	   
+	   //size of LinkedHastSet
+	   System.out.println("Size is:"+a.size());
+	   
+	   //remove all element 
+	  a.clear();
+	  System.out.println(a);
+	}
+}
