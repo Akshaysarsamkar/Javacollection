@@ -1,0 +1,60 @@
+import java.util.*;
+public class MapExample{
+	public static void main(String[] args) {
+	
+	Map<String,String> m = new HashMap<String,String>();
+	
+	//add element in Map 
+	m.put("first","Akahay");
+	m.put("second","Karan");
+	m.put("third","Pradip");
+	System.out.println(m);
+	m.put("first","Akshay");//update the first key value
+	System.out.println(m);
+	
+	//size of hashmap 
+	System.out.println("size is:"+m.size());
+	
+	//access key 
+	Set<String> keys = m.keySet();
+	for (String a:keys){
+		System.out.println(a);
+	}
+	
+	//access value and key pair 
+	for(String keyvalue : keys ){
+		System.out.println("Key is:"+keyvalue+" Value is:"+m.get(keyvalue));
+	}
+	
+	//value is contain or not 
+	if(m.containsValue("Akshay")){
+		System.out.println("Akshay Value contain");
+	}
+	
+	//modify the value of particular key
+	m.replace("second","Sunny");
+	System.out.println(m);
+	
+	
+	//check two obj equal or not 
+	Map<String,String> m1 = new HashMap<String,String>();
+	
+	if(m.equals(m1)){
+		System.out.println("Equal");
+	}else
+	   System.out.println("Not Equal");
+	   
+	   
+	   //remove key 
+	   m.remove("second");
+	   System.out.println(m);
+	   
+	   //remove key pair value
+	   m.remove("third","Pradip");
+	   System.out.println(m);
+	   
+	   //reset map
+	   m.clear();
+	   System.out.println(m);
+	}
+}
