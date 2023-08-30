@@ -1,0 +1,56 @@
+import java.util.*;
+public class Main {
+	public static void main(String[] args) {
+		
+		Map<String,String> m = new LinkedHashMap<String,String>();
+		
+		m.put("a","Akshay");
+		m.put("b","Karan");
+		m.put("c","sunny");
+		
+		//iterate LinkedHashMap
+		for(Map.Entry a : m.entrySet())
+		{
+			System.out.println("Key is:"+a.getKey()+" Value is:"+a.getValue());		
+		}
+
+	 //contain value or not	
+   	System.out.println(m.containsValue("Akahay"));
+
+
+    //contain Key or not 
+    System.out.println("1 Key is contain: "+m.containsKey(1));
+    
+    //not allow
+    /*
+    for(int i=0;i<m.size();i++){
+    	System.out.println(m[i]);
+    }
+    */
+    
+    Set<String> key = m.keySet();
+    System.out.println("Key  Value");
+    for(String k : key)
+    {
+    	System.out.println(k +"  "+m.get(k));
+    } 
+    m.clear();
+    System.out.println(m);
+    
+    
+    
+    Map<Integer,String> m1 = new LinkedHashMap<Integer,String>();
+    m1.put(22,"ak");
+    /*
+    //keySet() not work for  m1 object
+    Set<String> key= m1.keySet();
+    for(String k : key){
+    	System.out.println(k + "  "+m1.get(k));
+    }*/
+  
+    //the use entrySet() 
+    for(Map.Entry a : m1.entrySet()){
+    	System.out.println(a.getKey() + "  " + a.getValue());
+    }
+	}
+}
