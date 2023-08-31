@@ -1,0 +1,41 @@
+import java.util.*;
+public class Main {
+	public static void main(String[] args) {
+
+    TreeMap<String,Integer> mark = new TreeMap<String,Integer>();
+    
+    mark.put("Math",60);
+    mark.put("Eng",67);
+    mark.put("Hindi",78);
+    mark.put("C++",45);
+    
+    System.out.println(mark);
+    
+    //first key 
+    System.out.println("First key is:"+mark.firstKey());
+    
+    //last key:
+    System.out.println("First key is:"+mark.lastKey());
+    
+    //containkey or not
+    System.out.println(mark.containsKey("Hindi"));
+    
+    //iterate 
+    for(Map.Entry m : mark.entrySet()){
+    	System.out.println(m.getKey() + "  "+m.getValue());
+    }    
+    //remove element
+    mark.remove("C++");
+    
+    //replace
+    mark.replace("Eng",98);
+    System.out.println(mark);
+    System.out.println(mark.size());
+    
+    
+    Set<String> m = mark.keySet();
+    for(String a : m){
+    	System.out.println(a);
+    }
+	}
+}
