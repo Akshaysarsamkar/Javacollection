@@ -1,0 +1,54 @@
+import java.util.*;
+public class HashTable {
+	public static void main(String[] args) {
+		
+		Hashtable<String,Integer> table = new Hashtable<String,Integer>();
+		
+		table.put("Akshay",95);
+		table.put("Karan",89);
+		table.put("Sunny",98);
+		table.put("Soham",56);
+		
+		System.out.println(table);
+
+		//class of the table object 
+		System.out.println(table.getClass());
+		
+		//check empty or not
+		if(table.isEmpty())
+			System.out.println("Hashtable is empty");
+			else
+				System.out.println("Hashtable is Not empty");
+		
+		
+		//check key is contain or not
+		System.out.println(table.containsKey("Sunny"));
+		
+	//get specific key value
+	System.out.println(table.get("Akshay"));
+	
+	//update value
+	table.replace("Sunny",99);
+	
+	//iterate hastTable
+	for(Map.Entry key : table.entrySet()){
+		System.out.println("Name is:"+key.getKey()+" Rolln no:"+key.getValue());
+	}
+	
+	//using keySet() method
+	Set<String> s = table.keySet();
+	for(String n : s){
+		System.out.println("Rollno:"+table.get(n) + " Name is:" + n);
+	}
+	  
+	//remove 
+	table.remove("Akshay");
+	System.out.println(table);
+	
+	System.out.println(table.hashCode());
+	
+	//elements
+System.out.println(	table.elements());
+	
+	}
+}
