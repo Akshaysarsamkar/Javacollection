@@ -1,0 +1,19 @@
+ import java.util.*;
+public class Main {
+	public static void main(String[] args) {
+		TreeMap<String,Integer> t = new TreeMap<String,Integer>();
+		t.put("Akahay",34);
+		t.put("Karan",21);
+		t.put("Sita",78);
+		
+		
+		Iterator<Map.Entry<String,Integer>> i = t.entrySet().iterator();
+		
+		while(i.hasNext()){
+			Map.Entry<String,Integer> k = i.next();
+			String name = k.getKey();
+			Integer rno = k.getValue();
+			System.out.println(rno + "  " + name);
+		}
+	}
+}
