@@ -1,0 +1,42 @@
+import java.util.*;
+public class Main {
+	public static void main(String[] args) {
+		
+		ArrayList<String> li = new ArrayList<String>();
+		
+		li.add("Akshay");
+		li.add("Karan");
+		li.add("Pankaj");
+		System.out.println(li);
+		ListIterator<String> n = li.listIterator();
+		
+		//nextElement
+				System.out.println("Next Element is:"+n.previousIndex());
+				
+		//add element		
+		System.out.println(n.next());
+		n.add("Newhere");
+		
+		
+		//remove element
+		 n.next();
+		n.remove();
+	
+		
+		//forward direction
+		while(n.hasNext()){
+			System.out.println(n.next());
+		}
+		
+		//nextIndex
+		System.out.println("Next Element is:"+n.nextIndex());
+
+		System.out.println();
+		//backword direction
+		while(n.hasPrevious())
+		{
+		   System.out.println(n.previous()); 
+		}
+		   
+		  
+	}
