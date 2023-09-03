@@ -1,0 +1,35 @@
+import java.util.*;
+public class Main {
+	public static void main(String[] args) {
+		
+		Vector Enum = new Vector();
+		Enum.add(67);
+		Enum.add(32);
+		Enum.add(89);
+		Enum.add(1);
+	   Enum.addElement(new String("Akshay"));
+	    
+	   Enumeration e = Collections.enumeration(Enum);
+	   
+	   while(e.hasMoreElements()){
+	   	System.out.println(e.nextElement());
+	   }
+	   
+	   
+	   List<String> li = new ArrayList<String>();
+	   
+	   li.add("Akshay");
+	   li.add("Karan");
+	   li.add("Panlaj");
+	   li.add("Mohan");
+	   
+	   Enumeration<String>
+	    a =  Collections.enumeration(li);
+	   
+	   while(a.hasMoreElements()){
+	   	System.out.println(a.nextElement());
+	   }
+	   
+
+	}
+}
