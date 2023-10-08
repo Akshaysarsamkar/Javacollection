@@ -1,0 +1,52 @@
+<--------- store names and phone number in hash table. write menu driven program to perform following operations
+    1:-add   2:-delete  3:search 4:-display all ------------->
+
+
+import java.util.*;
+public class NameNumberStore{
+	public static void main(String[] args) {
+		
+		Hashtable <String,Long> t = new Hashtable<String,Long>();
+		int ch;
+		String name;
+		long num;
+		Scanner sc = new Scanner(System.in);
+		int i=1;
+while(i != 0){
+		System.out.println("Enter your choice:\n1:-Add\n2:-Delete\n3:-Search\n4:-DisplayAll");
+		ch = sc.nextInt();
+	switch(ch){
+		case 1:
+		 System.out.println("Enter your name and number");
+	 name = sc.next();
+	 num = sc.nextLong();
+	 t.put(name,num);
+	 break;
+	 
+	 case 2:
+	 System.out.println("Enter the name which is deleted");
+	 name = sc.next();
+	 t.remove(name);
+	 break;
+	 
+	 case 3:
+	 System.out.println("Enter the name which is search");
+	 name = sc.next();
+	 if(t.containsKey(name))
+	 	System.out.println("present");
+	 else 
+	 System.out.println("not present");
+	 break;
+	 
+	 case 4:
+	 System.out.println(t);
+	 break;
+	 
+	 default:
+	 System.out.println("Invalid Input");
+	}
+	System.out.println("do you want use again enter 1");
+	i = sc.nextInt();
+}	
+}
+}
